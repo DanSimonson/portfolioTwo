@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #0099CC;
+    color: #fff;
+    border: 1px solid;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .navbar-light .navbar-brand {
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
