@@ -1,13 +1,32 @@
 .navbar {
-    background-color: #0099CC;
-    color: #fff;
-    border: 1px solid;
+    background-color: green;
+    border: 1px solid #fff;
     margin-bottom: 0;
     padding-bottom: 0;
   }
   .navbar-light .navbar-brand {
     color: #fff;
     font-weight: 900;
-    font-style: italic;
+    font-style: italic; 
     margin-bottom: 5px;
   }
+  .navbar-light .navbar-brand:hover {
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+      color: #fff;
+  }
+  .navbar-brand img {
+    height: 90px;
+    width:200px;
+    margin: 0 0 0 30px;
+    padding: 0;  
+    border-radius: 20px;
+    font-weight: 900
+  }
+ 
