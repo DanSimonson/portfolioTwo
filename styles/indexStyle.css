@@ -1,3 +1,34 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/*
+h1 {
+  text-align: center;
+  font-size: 575%;
+  color: #4A4444;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  margin: 3% 0 10% 0;
+}
+h2 {
+  text-align: center;
+  font-size: 275%;
+  color: #E5E5E5;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+}*/
+
+/*--start parralax--*/
+.parallax {
+  background:url('../img/matrix.gif') repeat fixed 100%;
+}
+.parallax-inner {
+  padding-top: 18%;
+  padding-bottom: 18%;
+}
+/*--end parralax--*/
 .navbar {
     background-color: green;
     border: 1px solid #fff;
@@ -67,9 +98,71 @@
 @media (max-width: 767px) { 
   .carousel-caption{
     /*
-    display:nnone;
+    display:none;
     */
     font-size: 1rem;
   }
  }
+ .flip-container {
+  margin: 50px auto 160px auto;
+  width: 650px;
+  height: 200px;
+  transition: all 5s;
+  perspective: 900px;
+  font-size: 1.6rem;
+}
+.front, .back {
+  margin-left: 100px;
+  width: 600px;
+  height: 600px;
+  border-radius:600px;
+  padding: 100px 50px 50px 50px;
+  position: absolute;
+  top: 0;
+  /*width: 100%;
+  min-height: 100%;*/
+  text-align: center;
+  backface-visibility: hidden;
+  transform-style: preserve3d;
+  transition: all 5s;
+}
+.front {
+  background: green;
+  color: #fff;
+}
+
+.back {
+  color: #fff;
+  background: #337ab7;
+  transform: rotateX(-180deg);
+  
+}
+.flipped .back {
+  transform: rotateX(0deg);
+}
+
+.flipped .front {
+  transform: rotateX(180deg);
+}
+#email p {
+  font-size: 145%;
+}
+.container {
+  margin: 4% auto;
+}
+.container p {
+  font-size: 1.6em;
+}
+.container a {
+  text-decoration: none;
+}
+.container a:hover {
+  color: #FFF;
+  background-color: #50c878;
+  text-decoration: none;
+}
+.text-center  h2 {
+  color: black;
+  margin: 20px 0 40px 0;
+}
 
